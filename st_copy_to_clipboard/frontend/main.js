@@ -24,11 +24,11 @@ function onRender(event) {
     function copyToClipboard() {
       navigator.clipboard.writeText(textToCopy)
 
-      button.innerHTML = '✅'
+      button.innerHTML = 'Kopiert!'
 
       setTimeout(() => {
         if (!button) return
-        button.innerHTML = '📋'
+        button.innerHTML = 'Kopieren'
       }, 1000)
     }
 
